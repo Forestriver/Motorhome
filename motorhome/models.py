@@ -16,13 +16,16 @@ class Profile(models.Model):
     def __str__(self):
         return self.user.username
 
-class Подія(models.Model):
+class Event(models.Model):
     class Meta:
         verbose_name = "Подія"
         verbose_name_plural = "Події"
     action_text = models.CharField(max_length=200)
-    pub_date = models.DateTimeField('date published')
+    event_date = models.DateTimeField('Дата та час події')
     notes = models.TextField(blank=True, verbose_name="Додаткова інформація")
 
-    def was_published_recently(self):
-        return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
+    def event_planned(self):
+        return self.event_date >= timezone.now('Europe/Kiev') - datetime.timedelta(days=1)
+
+    def __str__(self):
+        return self.action_text
