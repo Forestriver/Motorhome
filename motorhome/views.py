@@ -1,17 +1,18 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-def index():
-    return render(request, 'layout.html', {})
+def homepage(request):
+    context = {"home_page": "active"}
+    return render(request, 'motorhome/homepage.html', context)
 
 def about(request):
-    return render(request, 'motorhome/about.html', {})
-
-def admin(request):
-    return render(request, 'motorhome/admin.html', {})
+    context = {"about_page": "active"}
+    return render(request, 'motorhome/about.html', context)
 
 def contacts(request):
-    return render(request, 'motorhome/contacts.html', {})
+    context = {"contacts_page": "active"}
+    return render(request, 'motorhome/contacts.html', context)
 
-def homepage(request):
-    return render(request, 'motorhome/homepage.html', {})
+def login(request):
+    context = {"login_page": "active"}
+    return render(request, 'motorhome/login.html', context)
