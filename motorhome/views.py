@@ -15,4 +15,4 @@ def contacts(request):
 
 def login(request):
     context = {"login_page": "active"}
-    return render(request, 'motorhome/login.html', context)
+    return render(request, 'motorhome/admin.py', context)
