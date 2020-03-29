@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 def homepage(request):
     context = {"home_page": "active"}
-    return render(request, 'motorhome/homepage.html', context)
+    return render(request, 'motorhome/layout.html', context)
 
 def about(request):
     context = {"about_page": "active"}
