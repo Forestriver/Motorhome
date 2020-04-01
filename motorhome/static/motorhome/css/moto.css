@@ -45,3 +45,8 @@ h5 {
   border-top: 2px solid #fff;
   width: 350px;
 }
+
+.form-inline {
+  background-color: transparent !important
+  border: none !important
+}
