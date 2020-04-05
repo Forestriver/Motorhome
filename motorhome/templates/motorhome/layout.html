@@ -10,18 +10,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'motorhome/css/moto.css' %}">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top scrolling-navbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-           <div class="container-fluid">
-             <ul class="nav navbar-nav">
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="nav navbar-nav mr-auto">
                <li class=nav-item {{home_page}}>
                  <a class="nav-link" href="{% url 'homepage' %}">Homepage</a>
                </li>
@@ -36,14 +34,13 @@
                </li>
              </ul>
              <form class="form-inline">
-              <div class="md-form my-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-              </div>
-            </form>
+                <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Пошук по сайту: " aria-label="Search">
+                <i class="fas fa-search"></i>
+             </form>
            </div>
     </header>
     <main>
-      <div class="view"
+      <div class="view">
 
           <div class="container">
             <!--Grid row-->
@@ -51,8 +48,8 @@
               <!--Grid column-->
               <div class="col-md-12 mb-4 white-text text-center">
                 <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5"><strong>MOTORHOME</strong></h1>
-                <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
-                <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Car repair</strong></h5>
+                <hr class="hr-light my-4">
+                <h5 class="text-uppercase mb-4 white-text"><strong>Car repair</strong></h5>
               </div>
               <!--Grid column-->
             </div>
@@ -63,12 +60,8 @@
         <!-- Mask & flexbox options-->
       </div>
     </main>
-    <footer>
-      <div class="col-md-12 mb-4 text-center">
-        <h6 class="h6 responsive"> ©2020 Motorhome, All rights reserved</h6>
-      <div>
-    </footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   </body>
 </html>

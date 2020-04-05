@@ -1,21 +1,19 @@
 body, html {
+  position: relative;
   height: 100%;
 }
 
 
 .view {
-  height: 620px;
   background-image: url('../images/mustangV8.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  height: 736px;
   font-size: large;
-  color: brown;
+  color: beige;
 }
 
-#footer {
-  position: bottom;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
+.form-control {
+  background-color: transparent;
 }
