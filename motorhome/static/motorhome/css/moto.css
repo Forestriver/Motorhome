@@ -3,12 +3,19 @@ body, html {
   height: 100%;
 }
 
-.navbar {
-  color: #E4BE6B
+.navbar-custom {
+    background-color: #11345c;
+    font-size: large;
 }
+
+.navbar-custom .nav-item .nav-link {
+    color: #E4BE6B;
+}
+
 
 .form-control {
   background-color: transparent;
+  color: black;
 }
 
 .view {
@@ -25,14 +32,15 @@ body, html {
   background-position: 40% 25%;
   color: #E4BE6B;
   overflow: hidden;
-  -webkit-animation: 4s cubic-bezier(.5, .15, .55, 1) fade;
-  animation: 4s cubic-bezier(.5, .15, .55, 1) fade;
+  -webkit-animation: 3s cubic-bezier(.5, .15, .55, 1) fade;
+  animation: 3s cubic-bezier(.5, .15, .55, 1) fade;
   animation-direction: normal;
   z-index: -1;
 }
 
 .brand-container {
-    font-family: Comic Neue;
+    font-family: 'Comic Neue';
+
     position: absolute;
     top: 25%;
     left: 50%;
