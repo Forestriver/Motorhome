@@ -3,17 +3,75 @@ body, html {
   height: 100%;
 }
 
-
-.view {
-  background-image: url('../images/mustangV8.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 736px;
-  font-size: large;
-  color: beige;
+.navbar {
+  color: #E4BE6B
 }
 
 .form-control {
   background-color: transparent;
+}
+
+.view {
+  position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2)),
+          url('../images/mustangV8.jpg');
+  background-size: cover;
+  background-attachment: relative;
+  background-repeat: no-repeat;
+  background-position: 40% 25%;
+  color: #E4BE6B;
+  overflow: hidden;
+  -webkit-animation: 4s cubic-bezier(.5, .15, .55, 1) fade;
+  animation: 4s cubic-bezier(.5, .15, .55, 1) fade;
+  animation-direction: normal;
+  z-index: -1;
+}
+
+.brand-container {
+    font-family: Comic Neue;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+h1 {
+  letter-spacing: 8px;
+  padding-top: 10px;
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+
+.hr-light {
+  border-top: 1px solid #fff;
+  width: 250px;
+}
+
+@@font-face {
+  font-family: 'Comic Neue';
+  src: url(https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap);
 }
