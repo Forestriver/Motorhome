@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Comic Neue';
+  src: url(https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap);
+}
+
 body, html {
   position: relative;
   height: 100%;
@@ -5,16 +10,17 @@ body, html {
 
 .navbar-custom {
     background-color: #11345c;
-    font-size: large;
+    opacity: 0.8;
+    font-size: 20px;
+    font-family: 'Comic Neue' cursive;
+    font-style: normal;
 }
 
 .navbar-custom .nav-item .nav-link {
-  color: #E4BE6B;
+  color: #DC9219;
 }
 
-.custom-toggler.navbar-toggler-icon {
-  border-color: #;
-}
+
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(228, 190, 107, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
@@ -40,22 +46,49 @@ body, html {
   background-size: cover;
   background-attachment: relative;
   background-repeat: no-repeat;
-  background-position: 40% 20%;
-  color: #E4BE6B;
+  background-position: 40% 40%;
+  color: #DC9219;
   overflow: hidden;
   -webkit-animation: 3s cubic-bezier(.5, .15, .55, 1) fade;
   animation: 3s cubic-bezier(.5, .15, .55, 1) fade;
-  animation-direction: normal;
+    animation-direction: normal;
   z-index: -1;
 }
 
 .brand-container {
     font-family: 'Comic Neue';
-
     position: absolute;
     top: 25%;
-    left: 50%;
+    left: 71%;
     transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 22px;
+    }
+    h5 {
+        font-size: 15px;
+    }
+}
+
+@media only screen {
+  .hr-light {
+      width: 180px
+  }
+}
+
+h1 {
+  letter-spacing: 8px;
+  padding-top: 10px;
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+
+.hr-light {
+  border-top: 1px solid #fff;
+  width: 200px;
 }
 
 @-webkit-keyframes fade {
@@ -73,24 +106,4 @@ body, html {
   100% {
     opacity: 1;
   }
-}
-
-
-h1 {
-  letter-spacing: 8px;
-  padding-top: 10px;
-}
-
-h5 {
-  letter-spacing: 3px;
-}
-
-.hr-light {
-  border-top: 1px solid #fff;
-  width: 250px;
-}
-
-@font-face {
-  font-family: 'Comic Neue';
-  src: url(https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap);
 }
