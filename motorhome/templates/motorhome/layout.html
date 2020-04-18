@@ -24,16 +24,16 @@
            <div class="collapse navbar-collapse" id="navbarSupportedContent">
              <ul class="nav navbar-nav mr-auto">
                <li class=nav-item {{main_page}}>
-                 <a class="nav-link" href="{% url 'main' %}">Головна</a>
+                 <a class="nav-link" data-value = "main" href="{% url 'main' %}">Головна</a>
                </li>
                <li class="nav-item" {{services_page}}>
-                 <a class="nav-link" href="{% url 'services' %}">Послуги</a>
+                 <a class="nav-link" data-value = "services" href="{% url 'services' %}">Послуги</a>
                </li>
                <li class="nav-item" {{technologies_page}}>
-                 <a class="nav-link" href="{% url 'technologies' %}">Технології</a>
+                 <a class="nav-link" data-value = "technologies" href="{% url 'technologies' %}">Технології</a>
                </li>
                <li class="nav-item" {{contacts_page}}>
-                 <a class="nav-link" href="{% url 'contacts' %}">Контакти</a>
+                 <a class="nav-link" data-value = "contacts" href="{% url 'contacts' %}">Контакти</a>
                </li>
                <li class="nav-item" {{login_page}}>
                  <a class="nav-link" href="{% url 'admin:index' %}">Вхід</a>
@@ -46,7 +46,7 @@
     </header>
     <main>
       {% block content %}
-      {% endblock%}
+      {% endblock %}
     </main>
 </div>
 
