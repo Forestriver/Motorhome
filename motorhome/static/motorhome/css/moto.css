@@ -1,18 +1,15 @@
-@font-face {
-  font-family: 'Comic Neue';
-  src: url(https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap);
-}
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 
 body, html {
   position: relative;
-  height: 100%;
+  height: 100%; ;
 }
 
 .navbar-custom {
     background-color: #11345c;
     opacity: 0.8;
     font-size: 20px;
-    font-family: 'Comic Sans MS';
+    font-family: 'Comfortaa', cursive;
     font-style: normal;
 }
 
@@ -20,6 +17,9 @@ body, html {
   color: #DC9219;
 }
 
+.navbar .nav > li > a:hover {
+  text-decoration: underline;
+}
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(228, 190, 107, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -49,14 +49,14 @@ body, html {
   background-position: 40% 40%;
   color: #DC9219;
   overflow: hidden;
-  -webkit-animation: 3s cubic-bezier(.5, .15, .55, 1) fade;
-  animation: 3s cubic-bezier(.5, .15, .55, 1) fade;
+  -webkit-animation: 2s cubic-bezier(.5, .15, .55, 1) fade;
+  animation: 2s cubic-bezier(.5, .15, .55, 1) fade;
     animation-direction: normal;
   z-index: -1;
 }
 
 .brand-container {
-    font-family: 'Comic Neue';
+    font-family: 'Comfortaa', cursive;
     position: absolute;
     top: 25%;
     left: 71%;
@@ -68,6 +68,13 @@ body, html {
     }
     h5 {
         font-size: 15px;
+    }
+    .text {
+      order: 1;
+    }
+
+    .img-fluid {
+      order: 2;
     }
 }
 
@@ -108,13 +115,50 @@ h5 {
   }
 }
 
-.services {
-  max-width: 80%;
+.serv {
+  max-width: 90%;
   height: auto;
-  margin: 0 auto;
+  margin: 10 auto;
+  padding: 10;
   position: absolute;
   top: 10%;
   left: 10%;
-  font-family: 'Comic Sans MS';
+
   float: right;
+}
+
+
+.services {
+  position: relative;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+  background-color: grey;
+  -webkit-animation: 2s cubic-bezier(.5, .15, .55, 1) fade;
+  animation: 2s cubic-bezier(.5, .15, .55, 1) fade;
+    animation-direction: normal;
+  z-index: -1;
+}
+
+
+.services{
+ margin: 4em 0;
+ padding: 1em;
+ position: relative;
+ font-family: 'Comfortaa', cursive;
+}
+.services h1 {
+ margin: 2em;
+}
+
+.services img {
+ height: 100%;
+ width: 100%;
+ border-radius: 50%
+}
+
+.services .desc{
+ padding: 2em;
+ border-left:4px solid
 }
