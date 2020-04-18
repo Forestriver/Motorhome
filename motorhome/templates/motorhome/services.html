@@ -1,5 +1,18 @@
 {% extends 'motorhome/layout.html' %}
 
 {% block content %}
-<h1>Services will be added here later</h1>
+{% load staticfiles %}
+
+<div class = "row services">
+  <div class = "col-lg-4 col-md-4 col-sm-12">
+    <img src = "{% static 'motorhome/images/breaksservice.jpg' %}" class = "img-fluid"/>
+  </div>
+  <div class = "col-lg-8 col-md-8 col-sm-12 desc">
+    <ol><h1>Послуги:</h1></ol>
+      <li><h5>Заміна масла, фільтрів</h5></li>
+      <li><h5>Діагностика та ремонт ходової частини</h5></li>
+      <li><h5>Діагностика та ремонт двигуна</h5></li>
+  </div>
+</div>
+
 {% endblock %}
