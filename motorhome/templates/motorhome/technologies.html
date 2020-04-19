@@ -1,5 +1,17 @@
-{% extends "motorhome/layout.html" %}
+{% extends 'motorhome/layout.html' %}
 
 {% block content %}
-<h1>Information about Motorhome car service will be added here later</h1>
+{% load staticfiles %}
+
+<div class = "row services">
+  <div class = "col-lg-4 col-md-4 col-sm-12 pict">
+    <img src = "{% static 'motorhome/images/mustangwhite.jpg' %}" class = "img-fluid"/>
+  </div>
+  <div class = "col-lg-8 col-md-8 col-sm-12 desc">
+    <ol><h1>Технології:</h1></ol>
+      <li><h5>Сторінка в розробці</h5></li>
+      <li><h5>Можливість додавати контент буде створена пізніше</h5></li>
+  </div>
+</div>
+
 {% endblock %}
