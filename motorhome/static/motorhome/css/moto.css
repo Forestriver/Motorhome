@@ -69,13 +69,7 @@ body, html {
     h5 {
         font-size: 15px;
     }
-    .text {
-      order: 1;
-    }
 
-    .img-fluid {
-      order: 2;
-    }
 }
 
 @media only screen {
@@ -115,25 +109,12 @@ h5 {
   }
 }
 
-.serv {
-  max-width: 90%;
-  height: auto;
-  margin: 10 auto;
-  padding: 10;
-  position: absolute;
-  top: 10%;
-  left: 10%;
-
-  float: right;
-}
-
 
 .services {
+  margin-top: 4em 0;
+  padding: 9.1em;
   position: relative;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
+  font-family: 'Comfortaa', cursive;
   background-color: grey;
   -webkit-animation: 2s cubic-bezier(.5, .15, .55, 1) fade;
   animation: 2s cubic-bezier(.5, .15, .55, 1) fade;
@@ -141,24 +122,26 @@ h5 {
   z-index: -1;
 }
 
-
-.services{
- margin: 4em 0;
- padding: 1em;
- position: relative;
- font-family: 'Comfortaa', cursive;
+@media screen and (max-width: 768px) {
+    .services {
+        padding: 4em;
+    }
+    .services .desc{
+     padding: 1em;
+   }
 }
+
 .services h1 {
- margin: 2em;
+ margin: 1em;
 }
 
 .services img {
  height: 100%;
  width: 100%;
- border-radius: 50%
+ border-radius: 5%
 }
 
 .services .desc{
- padding: 2em;
- border-left:4px solid
+ padding: 3em;
+ border-left:2px solid
 }
