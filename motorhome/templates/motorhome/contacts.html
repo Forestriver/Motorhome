@@ -1,5 +1,31 @@
-{% extends "motorhome/layout.html" %}
+{% extends 'motorhome/layout.html' %}
 
 {% block content %}
-<h1> contacts will be added here later</h1>
+{% load staticfiles %}
+
+<div class = "container pagetemplate">
+  <div class = "row">
+    <div class = "col-lg-4 col-md-4 col-sm-12 pict">
+      <img src = "{% static 'motorhome/images/womandriver.jpg' %}" class = "img-fluid">
+    </div>
+    <div class = "col-lg-4 col-md-4 col-sm-12">
+      <h3 class = "feature-title">Як проїхати</h3>
+      <h5>Інформацію буде додано</h5>
+    </div>
+    <div>
+      <h3 class = "feature-title">Зв'язатись з нами:</h3>
+      <div class = "form-group">
+        <input type = "email" class = "form-control" placeholder = "Ім'я" name = "">
+      </div>
+      <div class = "form-group">
+        <input type ="email" class = "form-control" placeholder = "email адреса" name = "email">
+      </div>
+      <div class = "form-group">
+        <textarea class = "form-control" rows = "4"></textarea>
+      </div>
+      <input type = "submit" class = "btn btn-secondary btn block" value = "Відправити" name = "">
+    </div>
+  </div>
+</div>
+
 {% endblock %}
