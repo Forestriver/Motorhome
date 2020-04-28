@@ -64,8 +64,8 @@ body, html {
     transform: translate(-50%, -50%);
 }
 @media screen and (max-width: 768px) {
-    h1 {
-        font-size: 22px;
+    h1, h3 {
+        font-size: 20px;
     }
     h5 {
         font-size: 15px;
@@ -152,6 +152,11 @@ h5, h3 {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .pagetemplate .address {
+  padding : 2em;
+  }
+}
 .pagetemplate .form-control,
 .pagetemplate input {
     border-radius: 7px;
