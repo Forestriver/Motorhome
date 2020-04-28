@@ -4,16 +4,16 @@ from django.http import HttpResponse
 
 def main(request):
     context = {"main_page": "active"}
-    return render(request, 'motorhome/main.html', context)
+    return render(request, 'main.html', context)
 
 def services(request):
     context = {"services_page": "active"}
-    return render(request, 'motorhome/services.html', context)
+    return render(request, 'services.html', context)
 
 def technologies(request):
     context = {"technologies_page": "active"}
-    return render(request, 'motorhome/technologies.html', context)
+    return render(request, 'technologies.html', context)
 
 def contacts(request):
     context = {"contacts_page": "active"}
-    return render(request, 'motorhome/contacts.html', context)
+    return render(request, 'contacts.html', context)

@@ -2,6 +2,7 @@ import datetime
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
+from django import forms
 
 
 class Profile(models.Model):
@@ -29,3 +30,6 @@ class Event(models.Model):
 
     def __str__(self):
         return self.action_text
+
+
+#contact form model

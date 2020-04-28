@@ -136,18 +136,18 @@ h5, h3 {
 }
 
 .pagetemplate img {
- height: 80%;
+ height: 100%;
  width: 100%;
  border-radius: 5%;
  box-shadow: 10px 10px 5px grey;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .pagetemplate .desc{
    padding-left: 3em;
   }
-  .pagetemplate img {
-   height: 100%;
+  .pagetemplate .contacts img {
+   height: 80%;
    width: 100%;
   }
 }
