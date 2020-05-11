@@ -17,7 +17,3 @@ def technologies(request):
 def contacts(request):
     context = {"contacts_page": "active"}
     return render(request, 'contacts.html', context)
-
-def ping(request):
-    data = {'ping':"pong"}
-    return JsonRequest(data)
