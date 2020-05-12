@@ -75,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'motorhome_root.motorhome_site.wsgi.application'
+WSGI_APPLICATION = 'motorhome_site.wsgi.application'
 
 
 # Database
