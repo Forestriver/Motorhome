@@ -81,8 +81,16 @@ WSGI_APPLICATION = 'motorhome_site.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 
-db_from_env = dj_database_url.config(conn_max_age=600)
-DATABASES = {'default': dj_database_url.config(conn_max_age=500) }
+DATABASES = {
+  'default': {
+      'ENGINE': 'django.db.backends.postgresql',
+      'NAME': 'postgres',
+      'USER': 'postgres',
+      'PASSWORD': 'petronius',
+      'HOST': 'localhost',
+      'PORT': '5432',
+  }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -121,6 +129,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'motorhome/static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE='whitenoise.storage.CompressedManifestStaticFilesStorage'
