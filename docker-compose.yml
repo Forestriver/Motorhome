@@ -9,9 +9,8 @@
         - POSTGRES_PASSWORD=postgres
     web:
       build: .
-      command: python manage.py runserver 0.0.0.0:8000
       volumes:
-        - /F/Programming/Python/Motorhome_Django/motorhome_root:/app
+        - ./:/app
       ports:
         - "8000:8000"
       depends_on:
